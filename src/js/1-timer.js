@@ -94,7 +94,6 @@ startBtnEl.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
   startBtnEl.disabled = true;
-  startBtnEl.style.pointerEvents = 'none';
   inputEl.disabled = true;
   startBtnEl.classList.remove('start-btn-abled');
 

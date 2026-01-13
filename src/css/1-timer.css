@@ -37,9 +37,11 @@
   border: none;
   border-radius: 8px;
   background-color: #cfcfcf;
+  pointer-events: none;
 }
 
 [data-start].start-btn-abled {
+  pointer-events: auto;
   color: #fff;
   background-color: #4e75ff;
   transition: background-color 250ms ease-in-out;
