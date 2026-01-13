@@ -52,10 +52,14 @@
 }
 
 .iziToast .iziToast-close {
-  background: url('../img/toast.-close.svg') !important;
+  background: url('../img/toast-close.svg') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   background-size: 16px !important;
+}
+
+.iziToast .ico-warning {
+  background: url('../img/toast-error.svg') !important;
 }
 
 .timer {

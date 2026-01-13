@@ -32,7 +32,6 @@ const options = {
         timeout: 5000,
         backgroundColor: '#EF4040',
         progressBarColor: '#B51B1B',
-        iconUrl: '/img/toast-error.svg',
         closeOnClick: true,
       });
       return;
