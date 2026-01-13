@@ -29,7 +29,6 @@ const options = {
         message: 'Please choose a date in the future',
         messageColor: '#ffffff',
         position: 'topRight',
-        timeout: 5000,
         backgroundColor: '#EF4040',
         progressBarColor: '#B51B1B',
         closeOnClick: true,
