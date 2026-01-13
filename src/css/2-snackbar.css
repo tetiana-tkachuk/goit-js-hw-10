@@ -71,3 +71,11 @@ legend {
     background-color: #6c8cff;
   }
 }
+
+.iziToast .ico-info {
+  background: url(../img/toast-bell.svg) !important;
+}
+
+.iziToast .ico-success {
+  background: url(../img/toast-check-mark.svg) !important;
+}
