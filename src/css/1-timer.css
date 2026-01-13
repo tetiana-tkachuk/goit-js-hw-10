@@ -4,11 +4,27 @@
 }
 
 #datetime-picker {
+  box-sizing: border-box;
   margin: 32px 0;
   width: 272px;
   height: 40px;
   border: 1px solid #808080;
   border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  transition: border 250ms ease-in-out;
+
+  &:hover {
+    border: 1px solid #000;
+  }
+
+  &:disabled {
+    color: #808080;
+    pointer-events: none;
+  }
 }
 
 [data-start] {
@@ -20,5 +36,41 @@
   color: #989898;
   border: none;
   border-radius: 8px;
-  background: #cfcfcf;
+  background-color: #cfcfcf;
+}
+
+[data-start].start-btn-abled {
+  color: #fff;
+  background-color: #4e75ff;
+  transition: background-color 250ms ease-in-out;
+
+  &:hover {
+    background-color: #6c8cff;
+  }
+}
+
+.iziToast .iziToast-close {
+  background: url('../img/toast.-close.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: 16px !important;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.value {
+  display: block;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #2e2f42;
 }

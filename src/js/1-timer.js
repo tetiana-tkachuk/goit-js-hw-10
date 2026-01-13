@@ -32,21 +32,19 @@ const options = {
         timeout: 5000,
         backgroundColor: '#EF4040',
         progressBarColor: '#B51B1B',
-        iconUrl: './img/toast-error.svg',
-        close: false,
+        iconUrl: '/img/toast-error.svg',
         closeOnClick: true,
       });
-
-      startBtnEl.disabled = true;
       return;
     }
 
     userSelectedDate = selectedDates[0];
     startBtnEl.disabled = false;
+    startBtnEl.classList.add('start-btn-abled');
   },
 };
 
-flatpickr('#datetime-picker', options);
+flatpickr(inputEl, options);
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
@@ -96,7 +94,9 @@ startBtnEl.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
   startBtnEl.disabled = true;
+  startBtnEl.style.pointerEvents = 'none';
   inputEl.disabled = true;
+  startBtnEl.classList.remove('start-btn-abled');
 
   updateTimer();
   timerId = setInterval(updateTimer, 1000);
